@@ -28,23 +28,8 @@ Or install it yourself as:
 CronosExplorer.net = 'testnet3' or CronosExplorer.net = 'main' (default)
 ```
 
-```ruby
-CronosExplorer::Blocks.eth_block_number
-
-CronosExplorer::Contracts.listcontracts
-
-CronosExplorer::Accounts.eth_get_balance(@address)
-CronosExplorer::Accounts.balance(@address)
-CronosExplorer::Accounts.txlist(@address, starttimestamp)
-CronosExplorer::Accounts.tokenbalance(@contractaddress, @address)
-
-CronosExplorer::Transactions.gettxinfo(@txhash)
-CronosExplorer::Transactions.gettxreceiptstatus(@txhash)
-CronosExplorer::Transactions.getstatus(@txhash)
-
-CronosExplorer::Tokens.getToken(@contractaddress)
-
-CronosExplorer::Contracts.listcontracts
+```test
+ruby test/*
 ```
 
 ## Development
