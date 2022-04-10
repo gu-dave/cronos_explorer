@@ -35,8 +35,8 @@ module CronosExplorer
       end
 
       # Get token transfer events by address. Up to a maximum of 10,000 token transfer events. Also available through a GraphQL 'token_transfers' query.
-      def tokentx(address)
-        hash = DEFAULT_HASH.merge(action: 'tokentx', address: address)
+      def tokentx(address, startblock, sort='desc')
+        hash = DEFAULT_HASH.merge(action: 'tokentx', address: address, startblock: startblock, sort: sort)
 
         Request.get hash
       end

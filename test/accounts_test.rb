@@ -11,9 +11,11 @@ class ScannersTest < Minitest::Test
     
     @swap_txhash = '0x3664a65015609c08b64499081d8dc042835129a9f34c3d8a1652e4d9cbb56543'
     @transfer_txhash = '0x5a0e9eb192be33842750082706000f0f9d44aa6e732372484d7eacb3497baa5c'
-    @blockno = '2565174'
+    @blockno = 2665573
     @timestamp = 1648184128
     @timestamp2 = 1748184128
+
+    
     sleep 0.5
   end
 
@@ -76,7 +78,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_tokentx
-    res_doc = CronosExplorer::Accounts.tokentx(@address)
+    res_doc = CronosExplorer::Accounts.tokentx(@address, @blockno)
 
     # puts res_doc
 
