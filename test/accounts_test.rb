@@ -40,7 +40,7 @@ class ScannersTest < Minitest::Test
 
     assert_equal res_doc['message'], 'OK'
     assert_equal res_doc['status'], '1'
-    assert_equal res_doc['result'].size, 9
+    assert_equal res_doc['result'].size, 10
 
 
     res_doc = CronosExplorer::Accounts.txlist(@address, @timestamp2)
@@ -55,7 +55,7 @@ class ScannersTest < Minitest::Test
     # puts res_doc
 
     assert_equal res_doc['message'], 'OK'
-    assert_equal res_doc['result'], '975286044859734714700895'
+    assert_equal res_doc['result'], '934302507446856929956626'
 
 
     res_doc = CronosExplorer::Accounts.tokenbalance(@tusd_contractaddress, @address)
