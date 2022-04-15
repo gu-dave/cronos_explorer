@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cronos_explorer (0.2.2)
+    cronos_explorer (0.2.3)
       faraday (~> 1.0)
       oj (~> 3.0)
 
