@@ -9,7 +9,7 @@ class ScannersTest < Minitest::Test
 
     # CronosExplorer.net = 'main'
     
-    @swap_txhash = '0x3664a65015609c08b64499081d8dc042835129a9f34c3d8a1652e4d9cbb56543'
+    @swap_txhash = '0x78fdd979c9f0f56bbe4a3f5304533549b38d908f6cd20b722831548e5aaf71d3'
     @transfer_txhash = '0x5a0e9eb192be33842750082706000f0f9d44aa6e732372484d7eacb3497baa5c'
     @blockno = '2565174'
     @timestamp = 1648184128
